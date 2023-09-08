@@ -1,3 +1,12 @@
+
+<h1>React-приложение поиска книг с помощью Google Books API </h1>
+
+<div>Язык програмирования - Typescript</div>
+
+<div>В качестве state-менеджера использовался MobX</div>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
