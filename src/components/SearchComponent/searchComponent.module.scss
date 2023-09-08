@@ -9,9 +9,40 @@
   background-size: cover;
 }
 
+@media (min-width: 320px) and (max-width: 501px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchTable {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      font-size: 10px;
+      border-radius: 5px;
+      width: 38px;
+      padding: 3px;
+    }
+
+
+  }
+}
+
+
 button {
   background-color: #f1bcea;
-
   border-radius: 5px;
   width: 100px;
   padding: 10px;

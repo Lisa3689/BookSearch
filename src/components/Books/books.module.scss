@@ -1,0 +1,16 @@
+.book {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.loadMore {
+    margin-bottom: 30px;
+    font-size: small;
+}

@@ -1,0 +1,32 @@
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+}
+
+.bookImg {
+    width: 200px;
+}
+
+.bookName {
+    color: black;
+    font-weight: 600px;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+.bookCategorie {
+    color: rgb(79, 76, 76);
+    font-weight: 400px;
+    font-size: 13px;
+    padding: 5px 0px;
+}
+
+.bookAuthors {
+    color: black;
+    font-weight: 400px;
+    font-size: 15px;
+    padding: 5px 0px;
+}

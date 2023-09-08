@@ -2,23 +2,23 @@
     display: flex;
 
     img {
-        height: 400px;
-        padding: 40px 150px;
+        width: auto;
+        padding: 40px;
     }
 
 }
 
-
-
 .description {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding-top: 40px;
+    font-size: 12px;
+    width: 70%;
 }
 
 .bookName {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 

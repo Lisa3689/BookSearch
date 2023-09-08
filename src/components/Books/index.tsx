@@ -3,7 +3,7 @@ import Store from "../../store/store";
 import BookCard from "./BookCard";
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
-import s from './index2.module.scss'
+import s from './books.module.scss'
 
 const Books = () => {
     const { books, isLoading, totalCount, getMoreBooks } = Store;
@@ -13,18 +13,18 @@ const Books = () => {
         return <h1>LOADING...</h1>
     }
     return (
-        <div className='container'>
-            <div>{`Found ${totalCount} results`}</div>
-            {books.map(item => {
-                return (
-                    <Link key={item.id} to={`/books/${item.id}`}>
-                        <div className={s.book}>
+        <div className='container' >
+            <div className={s.total}>{`Found ${totalCount} results`}</div>
+            <div className={s.book}>
+                {books.map(item => {
+                    return (
+                        <Link key={item.id} to={`/books/${item.id}`}>
                             <BookCard book={item} />
-                        </div>
-                    </Link>
-                )
-            })}
-            {!!books.length && <button onClick={getMoreBooks}>Load more</button>}
+                        </Link>
+                    )
+                })}
+            </div>
+            {!!books.length && <button className={s.loadMore} onClick={getMoreBooks}>Load more</button>}
         </div>
     );
 };

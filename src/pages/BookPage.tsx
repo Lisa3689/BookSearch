@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Books from "../components/Books";
 import { Link, useParams } from "react-router-dom";
-import s from './bookPage.module.scss'
-import img from '../assets/img/book.svg'
+import s from './bookPage.module.scss';
+import img from '../assets/img/book.svg';
 import { BookType } from "../types/Book";
 import axios, { AxiosResponse } from 'axios';
 import parse from 'html-react-parser';
