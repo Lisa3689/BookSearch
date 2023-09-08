@@ -4,13 +4,14 @@ import BookCard from "./BookCard";
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
 import s from './books.module.scss'
+import loaderSvg from '../../assets/img/Preloader_1.gif'
 
 const Books = () => {
     const { books, isLoading, totalCount, getMoreBooks } = Store;
 
 
     if (isLoading) {
-        return <h1>LOADING...</h1>
+        return <img className={s.imgLoader} src={loaderSvg} />
     }
     return (
         <div className='container' >
